@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange and White Website</title>
+    <style>
+        body {
+            background-color: #FE973A; /* Pastel Orange background */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .white-square {
+            position: relative; /* Allow absolute positioning inside */
+            width: 1600px;
+            height: 800px;
+            background-color: #F5F5F5;
+            border: 5px solid #FFF; /* Add a white border */
+            border-radius: 20px; /* Rounded corners for smoother edges */
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+        .logo {
+            position: absolute;
+            top: 30px;
+            left: 100px; /* Adjust the left value to move it to the right */
+            width: 80px; /* Adjust the logo width as needed */
+            height: auto;
+        }
+
+        .store-name {
+            position: absolute;
+            top: 40px;
+            left: 200px; /* Adjust the left value to position the text */
+            font-size: 40px; /* Adjust the font size */
+            font-weight: bold; /* Adjust the font weight */
+            white-space: nowrap;
+            animation: colorChange 3s infinite;
+        }
+
+        .phrase {
+            position: absolute;
+            top: 150px; /* Adjust the top value for the phrase */
+            left: 100px; /* Adjust the left value to align with the logo */
+            font-size: 90px; /* Adjust the font size for the phrase */
+            font-weight: bold; /* Adjust the font weight if needed */
+            white-space: nowrap;
+            color: #333; /* Text color for the phrase */
+        }
+
+        .finest {
+            color: #f1ad59; /* Color for "Finest" */
+            animation: highlight 3s infinite; /* Animation for "Finest" */
+        }
+
+        .paragraph {
+            position: absolute;
+            top: 360px; /* Adjust the top value for the paragraph */
+            left: 100px; /* Adjust the left value to align with the logo */
+            font-size: 22px; /* Adjust the font size for the paragraph */
+            color: #333; /* Text color for the paragraph */
+            line-height: 1.50; /* Adjusted line height for better spacing */
+        }
+
+        .button-container {
+            position: absolute;
+            top: 580px; /* Adjust the top value for the button container */
+            left: 160px; /* Adjust the left value to align with the logo */
+            display: inline-block;
+        }
+
+        .button-container-contact {
+            position: absolute;
+            top: 580px; /* Adjust the top value for the button container */
+            left: 400px; /* Adjust the left value to align with the logo */
+            display: inline-block;
+        }
+
+        .button {
+            width: auto; /* Let the button size adjust to content */
+            padding: 20px 40px; /* Add padding for spacing around text */
+            border-radius: 50px; /* Create a circular shape */
+            background: linear-gradient(45deg, #f1b650, #FF9A18);
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .navigation {
+            position: absolute;
+            top: 30px; /* Adjust the top value to position the navigation */
+            right: 100px; /* Adjust the right value to position the navigation */
+            list-style: none;
+        }
+
+        .navigation li {
+            display: inline;
+            margin-right: 30px; /* Adjust the spacing between navigation items */
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #f3780c;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .big-image {
+            position: absolute;
+            top: 40px; /* Adjust the top value to position the big image */
+            right: 100px; /* Adjust the right value to move the image to the right */
+            max-width: 800px; /* Limit the image width */
+        }
+
+        .bottom-left-image {
+            position: absolute;
+            bottom: -30px;
+            left: 200px;
+            max-width: 800px; /* Adjust the image width as needed */
+        }
+
+        @keyframes colorChange {
+            0%, 10% {
+                color: #F47C00;
+            }
+            20%, 30% {
+                color: #A6AE3E;
+            }
+            40%, 50% {
+                color: #f1ad59;
+            }
+            60%, 70% {
+                color: #F4C303;
+            }
+            80%, 90% {
+                color: #ED4A07;
+            }
+        }
+
+        @keyframes highlight {
+            0%, 100% {
+                background: none;
+                color: #f1ad59;
+            }
+            50% {
+                background: #f1ad59; /* Background color during animation */
+                color: #fff; /* Text color during animation */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="white-square">
+        <img src="sushi logo.png" alt="Logo" class="logo">
+        <div class="store-name"><span style="color: #F47C00;">S</span>us<span style="color: #A6AE3E;">h</span>i<span style="color:#f1ad59;"> S</span>e<span style="color: #F4C303;">r</span>e<span style="color: #ED4A07;">n</span>i<span style="color: #FFC784;">t</span>y</div>
+        <div class="phrase">Savor the <span class="finest">Finest</span> Sushi<br>in Sushi Serenity</div>
+        <p class="paragraph">At Sushi Serenity, we invite you on a journey of culinary bliss, <br>where the delicate art of sushi preparation meets the serenity of an unforgettable <br>dining experience. Nestled in the heart of Bulacan, our restaurant is a hidden gem, <br>where each visit promises an exquisite fusion of taste and tranquility.</p>
+        <div class="button-container">
+            <a href="menu.html" class="button">Check Menu</a>
+        </div>
+        <div class="button-container-contact">
+            <a href="#" class="button">Contact Us</a>
+        </div>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li> <!-- Link to the new menu page -->
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <img src="home pic.png" alt="Big Image" class="big-image">
+    </div>
+
+    <img src="bottom pic.png" alt="Bottom Left Image" class="bottom-left-image">
+</body>
+</html>
